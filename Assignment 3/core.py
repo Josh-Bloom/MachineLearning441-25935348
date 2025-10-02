@@ -706,7 +706,6 @@ def run_core(datasets: List[str], seeds: List[int]) -> Tuple[List[float], List[f
         print(f" F1 scores: {np.mean(f1_base):.3f} +- {np.std(f1_base):.3f}, | | {np.mean(f1_icl):.3f} +- {np.std(f1_icl):.3f}")
         print(f" MCC scores: {np.mean(mcc_base):.3f} +- {np.std(mcc_base):.3f}, | | {np.mean(mcc_icl):.3f} +- {np.std(mcc_icl):.3f}")
         print(f" Accuracy scores: {np.mean(accuracy_base):.3f} +- {np.std(accuracy_base):.3f}, | | {np.mean(accuracy_icl):.3f} +- {np.std(accuracy_icl):.3f}")
-        # print(f"${np.mean(accuracy_base):.3f}\\pm{np.std(accuracy_base):.3f}$ & ${np.mean(f1_base):.3f}\\pm{np.std(f1_base):.3f}$ & ${np.mean(mcc_base):.3f}\\pm{np.std(mcc_base):.3f}$ & ${np.mean(accuracy_icl):.3f}\\pm{np.std(accuracy_icl):.3f}$ & ${np.mean(f1_icl):.3f}\\pm{np.std(f1_icl):.3f}$ & ${np.mean(mcc_icl):.3f}\\pm{np.std(mcc_icl):.3f}$")
         print("="*50)
     
     end_time = time.time()

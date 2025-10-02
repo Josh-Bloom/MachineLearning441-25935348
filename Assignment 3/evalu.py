@@ -95,7 +95,7 @@ def visualise(overall_accuracy_base: List[float], overall_accuracy_icl: List[flo
     ax.set_xlabel('Dataset')
     ax.legend(title='Model', bbox_to_anchor=(1.05, 1), loc='upper left')
     plt.tight_layout()
-    plt.savefig('1accuracy.pdf', bbox_inches='tight', dpi=200)
+    plt.savefig('accuracy.pdf', bbox_inches='tight', dpi=200)
 
     # Create hidden neurons comparison plot
     fig, ax = plt.subplots(1, 1, figsize=(12, 8))
@@ -117,4 +117,4 @@ def visualise(overall_accuracy_base: List[float], overall_accuracy_icl: List[flo
     ax.get_legend().remove()  # Remove legend for second plot
 
     plt.tight_layout()
-    plt.savefig('1neurons.pdf', bbox_inches='tight', dpi=200)
+    plt.savefig('neurons.pdf', bbox_inches='tight', dpi=200)
